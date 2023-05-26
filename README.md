@@ -1,10 +1,10 @@
-# Moodle iorad atto editor plugin #
+# Moodle iorad tinyMCE editor plugin #
 
-[![Moodle Plugin CI](https://github.com/habibillah/iorad-atto-editor/actions/workflows/moodle-ci.yml/badge.svg?branch=main)](https://github.com/habibillah/iorad-atto-editor/actions/workflows/moodle-ci.yml)
+[![Moodle Plugin CI](https://github.com/habibillah/iorad-tiny-editor/actions/workflows/moodle-ci.yml/badge.svg?branch=main)](https://github.com/habibillah/iorad-tiny-editor/actions/workflows/moodle-ci.yml)
 
-The iorad atto editor plugin for Moodle enables you to quickly and safely browse through your entire iorad tutorial.
+The iorad tinyMCE editor plugin for Moodle enables you to quickly and safely browse through your entire iorad tutorial.
 
-This makes it easy to embed iorad tutorial using the [Atto editor](https://docs.moodle.org/311/en/Atto_editor) and share them with your course participants.
+This makes it easy to embed iorad tutorial using the [tinyMCE editor](https://docs.moodle.org/311/en/TinyMCE_editor) and share them with your course participants.
 
 ## Installing via uploaded ZIP file ##
 
@@ -18,7 +18,7 @@ This makes it easy to embed iorad tutorial using the [Atto editor](https://docs.
 
 The plugin can be also installed by putting the contents of this directory to
 
-    {your/moodle/dirroot}/lib/editor/atto/plugins/iorad
+    {your/moodle/dirroot}/lib/editor/tiny/plugins/iorad
 
 Afterwards, log in to your Moodle site as an admin and go to _Site administration >
 Notifications_ to complete the installation.

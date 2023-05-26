@@ -17,11 +17,11 @@
 /**
  * Plugin strings are defined here.
  *
- * @package atto_iorad
+ * @package tiny_iorad
  * @category string
  * @copyright 2023, iorad <info@iorad.com>
  * @license https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 $string['pluginname'] = 'Embed iorad tutorial';
-$string['privacy:metadata'] = 'The atto_iorad plugin does not store any personal data.';
+$string['privacy:metadata'] = 'The tiny_iorad plugin does not store any personal data.';

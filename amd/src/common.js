@@ -14,15 +14,17 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Example module for the plugintype_pluginname plugin.
+ * Tiny Media common values.
  *
- * @module atto_iorad/main
- * @copyright 2023, iorad <info@iorad.com>
- * @license http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @module      tiny_media/common
+ * @copyright   2022 Huong Nguyen <huongnv13@gmail.com>
+ * @license     http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
-import {fetchThings} from './repository';
-
-export const updateThings = (thingData) => {
-    return fetchThings(thingData);
+export default {
+    pluginName: 'tiny_media/plugin',
+    component: 'tiny_media',
+    imageButtonName: 'tiny_media_image',
+    videoButtonName: 'tiny_media_video',
+    mediaManagerButtonName: 'tiny_mediamanager',
 };

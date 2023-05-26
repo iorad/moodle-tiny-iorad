@@ -15,16 +15,16 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Version metadata for the atto_iorad plugin.
+ * Version metadata for the tiny_iorad plugin.
  *
- * @package     atto_iorad
+ * @package     tiny_iorad
  * @copyright   2023, iorad <info@iorad.com>
  * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
 
-$plugin->component = 'atto_iorad';
+$plugin->component = 'tiny_iorad';
 $plugin->release = '1.0.0';
 $plugin->version = 2023052501;
 $plugin->requires = 2018051700;

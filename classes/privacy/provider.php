@@ -15,21 +15,21 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Privacy Subsystem implementation for atto_iorad
+ * Privacy Subsystem implementation for tiny_iorad
  *
- * @package atto_iorad
+ * @package tiny_iorad
  * @copyright 2023, iorad <info@iorad.com>
  * @license https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
-namespace atto_iorad\privacy;
+namespace tiny_iorad\privacy;
 
 use core_privacy\local\metadata\null_provider;
 
 /**
- * Privacy Subsystem for atto_iorad implementing null_provider.
+ * Privacy Subsystem for tiny_iorad implementing null_provider.
  *
- * @package     atto_iorad
+ * @package     tiny_iorad
  * @copyright   2023, iorad <info@iorad.com>
  * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
