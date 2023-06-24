@@ -14,17 +14,21 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Tiny Media common values.
+ * Tiny iorad common values.
  *
- * @module      tiny_media/common
- * @copyright   2022 Huong Nguyen <huongnv13@gmail.com>
- * @license     http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @module tiny_iorad/common
+ * @copyright 2023 iorad <info@iorad.com>
+ * @license http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
+export const pluginName = 'tiny_iorad/plugin';
+export const component = 'tiny_iorad';
+export const icon = 'tiny_iorad';
+export const buttonName = 'tiny_iorad_button';
+
 export default {
-    pluginName: 'tiny_media/plugin',
-    component: 'tiny_media',
-    imageButtonName: 'tiny_media_image',
-    videoButtonName: 'tiny_media_video',
-    mediaManagerButtonName: 'tiny_mediamanager',
+    pluginName,
+    component,
+    icon,
+    buttonName,
 };
