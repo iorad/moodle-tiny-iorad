@@ -1,3 +1,124 @@
-.iorad-main {
-    background: darkred;
+.iorad-modal-title {
+    display: flex;
+    align-items: center;
+}
+
+.iorad-modal-logo {
+    margin-right: 4px;
+    margin-top: -4px;
+}
+
+.iorad-form {
+    padding: 5vh 10vw;
+    display: block;
+}
+
+.iorad-link-input {
+    font-family: "Libre Franklin", sans-serif;
+    display: block;
+    text-align: left;
+    padding: 12px 20px 8px;
+    font-weight: 300;
+    font-size: 16px;
+    width: 100%;
+    min-width: 130px;
+    height: 64px;
+    color: #000;
+    border: none;
+    border-radius: 0;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+    background: white;
+    outline: none;
+    margin-bottom: 24px;
+}
+
+.iorad-error-link,
+.iorad-error-iframe {
+    color: #ff00d6;
+    font-size: 16px;
+    text-align: center;
+    font-family: "Libre Franklin", sans-serif;
+    font-weight: 300;
+    line-height: 20px;
+    margin-top: -14px;
+    margin-bottom: 24px;
+}
+
+.iorad-switch-button,
+.iorad-cancel-button {
+    text-align: center;
+    display: block;
+    font-family: "Libre Franklin", sans-serif;
+    font-weight: 300;
+    font-size: 16px;
+    margin-bottom: 20px;
+    color: #0047ff;
+    background: none;
+    border: none;
+    outline: none;
+    border-bottom: 1px solid transparent;
+}
+
+.iorad-switch-button:hover {
+    border-bottom: 1px solid #0047ff;
+}
+
+.iorad-cancel-button {
+    color: #ff291c;
+}
+
+.iorad-cancel-button:hover {
+    border-bottom: 1px solid #ff291c;
+}
+
+.iorad-save-button {
+    font-family: "Libre Franklin", sans-serif;
+    font-size: 16px;
+    font-weight: 300;
+    margin-bottom: 24px;
+    transition: opacity 0.2s ease-in-out;
+    border-radius: 40px;
+    height: 40px;
+    opacity: 1;
+    background: #ccc;
+    user-select: none;
+    color: #fff;
+    outline: none;
+    text-align: center;
+    width: 100%;
+    min-width: 130px;
+    line-height: 40px;
+    border: none;
+}
+
+.iorad-buttons {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.iorad-iframe-textarea {
+    resize: none;
+    font-family: "Libre Franklin", sans-serif;
+    display: block;
+    text-align: left;
+    padding: 12px 20px 8px;
+    font-weight: 300;
+    font-size: 16px;
+    color: #000;
+    border-radius: 0;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    background: white;
+    outline: none;
+    margin-bottom: 24px;
+    width: 100%;
+}
+
+.iorad-hidden {
+    display: none;
+    visibility: hidden;
+}
+
+.iorad-button-black {
+    background: #000;
 }

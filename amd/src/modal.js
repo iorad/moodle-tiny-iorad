@@ -24,7 +24,7 @@
 import Modal from 'core/modal';
 import ModalRegistry from 'core/modal_registry';
 
-const IoradModal = class extends Modal {
+export default class IoradModal extends Modal {
     static TYPE = 'tiny_iorad/modal';
     static TEMPLATE = 'tiny_iorad/modal';
 
@@ -36,8 +36,7 @@ const IoradModal = class extends Modal {
         this.registerCloseOnSave();
         this.registerCloseOnCancel();
     }
-};
+}
 
 ModalRegistry.register(IoradModal.TYPE, IoradModal, IoradModal.TEMPLATE);
 
-export default IoradModal;

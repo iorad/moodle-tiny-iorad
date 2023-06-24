@@ -27,13 +27,12 @@
 
     Context variables required for this template:
 
-TODO test it
-<!--    Example context (json):-->
-<!--    {-->
-<!--        "url": "https://moodle.h5p.com/content/1290772960722742119"-->
-<!--    }-->
+    Example context (json):
+    {
+        "ioradPlayer": "<iframe src="https://dev.iorad.dev/player/812/The-Instructure-Study-Hall-?src=iframe&oembed=1" width="560px" height="315px" style="width: 560px; height: 315px; border-bottom: 1px solid #ccc;" referrerpolicy="strict-origin-when-cross-origin" frameborder="0" webkitallowfullscreen="webkitallowfullscreen" mozallowfullscreen="mozallowfullscreen" allowfullscreen="allowfullscreen" allow="camera; microphone; clipboard-write"></iframe>"
+    }
 }}
 
 <div class="iorad-placeholder" contenteditable="false">
-    {{ url }}
+    {{{ ioradPlayer }}}
 </div>

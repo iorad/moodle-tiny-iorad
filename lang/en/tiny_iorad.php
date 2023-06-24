@@ -25,6 +25,17 @@
 
 $string['pluginname'] = 'Tiny iorad tutorial';
 $string['privacy:metadata'] = 'The tiny_iorad plugin does not store any personal data.';
-$string['buttontitle'] = 'iorad';
-$string['modaltitle'] = 'Add iorad tutorial';
-$string['noioradcontent'] = 'No iorad tutorial added';
+
+$string['button_title'] = 'iorad';
+$string['modal_title'] = 'iorad tutorial';
+$string['save_iorad'] = 'Save iorad';
+
+$string['input_url_label'] = 'iorad player link';
+$string['input_url_placeholder'] = 'Paste iorad direct player link here';
+$string['invalid_url'] = 'Incorrect iorad tutorial URL';
+
+$string['input_iframe_label'] = 'iorad embed code';
+$string['input_iframe_placeholder'] = 'Paste iorad embed code here';
+$string['invalid_iframe'] = 'Incorrect iorad embed code';
+$string['swicth_to_url'] = 'Switch to player only';
+$string['swicth_to_iframe'] = 'Switch to step list';

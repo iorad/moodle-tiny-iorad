@@ -29,7 +29,7 @@ import {getButtonImage} from 'editor_tiny/utils';
 
 export const getSetup = async() => {
     const [buttonText, buttonImage] = await Promise.all([
-        getString('buttontitle', component, undefined, undefined),
+        getString('button_title', component, undefined, undefined),
         getButtonImage('icon', component),
     ]);
 
