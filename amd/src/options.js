@@ -16,36 +16,23 @@
 /**
  * Options helper for Tiny Media plugin.
  *
- * @module      tiny_media/options
- * @copyright   2022 Huong Nguyen <huongnv13@gmail.com>
- * @license     http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @module tiny_media/options
+ * @copyright 2023 iorad <info@iorad.com>
+ * @license http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 import {getPluginOptionName} from 'editor_tiny/options';
 import {pluginName} from './common';
 
-const dataName = getPluginOptionName(pluginName, 'data');
 const permissionsName = getPluginOptionName(pluginName, 'permissions');
 
-/**
- * Register the options for the Tiny Media plugin.
- *
- * @param {TinyMCE} editor
- */
 export const register = (editor) => {
     const registerOption = editor.options.register;
-
     registerOption(permissionsName, {
         processor: 'object',
         "default": {
-            image: {
-                filepicker: false,
-            }
+            embed: true,
         },
-    });
-
-    registerOption(dataName, {
-        processor: 'object',
     });
 };
 
@@ -55,7 +42,9 @@ export const register = (editor) => {
  * @param {TinyMCE} editor
  * @returns {object}
  */
-export const getPermissions = (editor) => editor.options.get(permissionsName);
+export const getPermissions = (editor) => {
+    return editor.options.get(permissionsName);
+};
 
 /**
  * Get the permissions configuration for the Tiny Media plugin.
@@ -63,20 +52,4 @@ export const getPermissions = (editor) => editor.options.get(permissionsName);
  * @param {TinyMCE} editor
  * @returns {object}
  */
-export const getImagePermissions = (editor) => getPermissions(editor).image;
-
-/**
- * Get the permissions configuration for the Tiny Media plugin.
- *
- * @param {TinyMCE} editor
- * @returns {object}
- */
-export const getEmbedPermissions = (editor) => getPermissions(editor).embed;
-
-/**
- * Get the data configuration for the Media Manager.
- *
- * @param {TinyMCE} editor
- * @returns {object}
- */
-export const getData = (editor) => editor.options.get(dataName);
+export const hasAnyIoradPermission = (editor) => getPermissions(editor).embed;

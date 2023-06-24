@@ -23,5 +23,8 @@
  * @license https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
-$string['pluginname'] = 'Embed iorad tutorial';
+$string['pluginname'] = 'Tiny iorad tutorial';
 $string['privacy:metadata'] = 'The tiny_iorad plugin does not store any personal data.';
+$string['buttontitle'] = 'iorad';
+$string['modaltitle'] = 'Add iorad tutorial';
+$string['noioradcontent'] = 'No iorad tutorial added';

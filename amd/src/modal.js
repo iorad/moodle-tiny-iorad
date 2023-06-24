@@ -14,21 +14,19 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Embedded Media Management Modal for Tiny.
+ * Tiny iorad content configuration.
  *
- * @module      tiny_media/embedmodal
- * @copyright   2022 Andrew Lyons <andrew@nicols.co.uk>
- * @license     http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @module tiny_iorad/modal
+ * @copyright 2023 iorad <info@iorad.com>
+ * @license http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 import Modal from 'core/modal';
 import ModalRegistry from 'core/modal_registry';
-import {component} from './common';
 
-const EmbedModal = class extends Modal {
-    static TYPE = `${component}/modal`;
-
-    static TEMPLATE = `${component}/embed_media_modal`;
+const IoradModal = class extends Modal {
+    static TYPE = 'tiny_iorad/modal';
+    static TEMPLATE = 'tiny_iorad/modal';
 
     registerEventListeners() {
         // Call the parent registration.
@@ -40,6 +38,6 @@ const EmbedModal = class extends Modal {
     }
 };
 
-ModalRegistry.register(EmbedModal.TYPE, EmbedModal, EmbedModal.TEMPLATE);
+ModalRegistry.register(IoradModal.TYPE, IoradModal, IoradModal.TEMPLATE);
 
-export default EmbedModal;
+export default IoradModal;
