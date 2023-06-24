@@ -1,4 +1,3 @@
-<?xml version="1.0" encoding="utf-8"?>
-<svg class="icon" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-	<path fill="#ff01d6" fill-rule="evenodd" clip-rule="evenodd" d="M13 3H3V13H13V3ZM0 0H16V16H0V0Z" />
+<svg xmlns="http://www.w3.org/2000/svg" fill="none" class="icon" viewBox="0 0 16 16">
+  <path fill="#000" fill-rule="evenodd" d="M11.609729 4.474684H4.6257476v6.983981h6.9839814ZM2.5305532 2.3794895H13.704924V13.55386H2.5305532Z" clip-rule="evenodd" style="stroke-width:.698399"/>
 </svg>
