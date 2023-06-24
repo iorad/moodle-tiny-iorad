@@ -1,0 +1,17 @@
+.mce-content-body .iorad-placeholder + br {
+    display: none;
+}
+
+.mce-content-body .iorad-placeholder {
+    color: #6c757d;
+    width: 100%;
+    word-break: break-all;
+    height: 260px;
+    cursor: pointer;
+    background: url([[pix:tiny_iorad|icon-colored]]) center center / 100px auto no-repeat #6c757d;
+}
+
+
+.mce-content-body .iorad-placeholder > * {
+    display: none;
+}

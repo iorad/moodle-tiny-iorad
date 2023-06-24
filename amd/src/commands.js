@@ -52,8 +52,8 @@ export const getSetup = async() => {
             onAction: () => handleAction(editor),
             onSetup: (api) => {
                 // Set the button to be active if the current selection matches the iorad formatter registered above during PreInit.
-                api.setActive(editor.formatter.match('iorad'));
-                const changed = editor.formatter.formatChanged('iorad', (state) => api.setActive(state));
+                api.setActive(editor.formatter.match(component));
+                const changed = editor.formatter.formatChanged(component, (state) => api.setActive(state));
                 return () => changed.unbind();
             }
         });

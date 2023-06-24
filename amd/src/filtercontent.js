@@ -22,15 +22,18 @@
  */
 
 import {registerPlaceholderSelectors} from 'editor_tiny/options';
+import {component} from "./common";
 
 export const setup = async(editor) => {
     const className = 'iorad-placeholder';
     const classSelector = `.${className}`;
+
     // Register iorad Formatter to the placeholder selector list.
     registerPlaceholderSelectors(editor, [classSelector]);
+
     // Register the iorad Formatter for use in all buttons.
     editor.on('PreInit', () => {
-        editor.formatter.register('iorad', {
+        editor.formatter.register(component, {
             inline: 'div',
             classes: className,
         });

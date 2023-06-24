@@ -44,13 +44,12 @@ export const handleAction = async(editor) => {
  */
 const getTemplateContext = (editor, data) => {
     const permissions = getPermissions(editor);
-    return Object.assign({}, {
+    return {
         elementid: editor.id,
         canEmbed: permissions.embed ?? false,
         showOptions: false,
-        ioradPlayerLink: data?.ioradPlayerLink ?? '',
-        ioradEmbedCode: data?.ioradEmbedCode ?? '',
-    }, data);
+        ...data
+    };
 };
 
 /**
