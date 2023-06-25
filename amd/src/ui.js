@@ -31,9 +31,7 @@ import ModalFactory from 'core/modal_factory';
 import {getButtonImage} from 'editor_tiny/utils';
 import {get_string as getString} from 'core/str';
 
-let openingSelection = null;
 export const handleAction = async(editor) => {
-    openingSelection = editor.selection.getBookmark();
     await displayDialogue(editor);
 };
 
@@ -106,6 +104,7 @@ const displayDialogue = async(editor, data = {}) => {
         getString('swicth_to_url', component, undefined, undefined),
     ]);
 
+    const bookmark = editor.selection.getBookmark();
     const selection = editor.selection.getNode();
     const currentData = selection.closest('.iorad-placeholder');
     data.ioradEmbedCode = currentData?.innerHTML;
@@ -119,7 +118,7 @@ const displayDialogue = async(editor, data = {}) => {
 
     modal.show();
 
-    const $root = modal.getRoot();
+    const $root = await modal.getRoot();
     $root.on(ModalEvents.save, async(event, modal) => {
         event.preventDefault();
 
@@ -140,9 +139,8 @@ const displayDialogue = async(editor, data = {}) => {
         const ioradPlayer = buildIoradPlayer(inputElement.value.trim());
         const content = await renderForPromise(`${component}/content`, {ioradPlayer: ioradPlayer});
 
-        editor.selection.moveToBookmark(openingSelection);
+        editor.selection.moveToBookmark(bookmark);
         editor.execCommand('mceInsertContent', false, content.html);
-        editor.selection.moveToBookmark(openingSelection);
         modal.destroy();
     });
 
