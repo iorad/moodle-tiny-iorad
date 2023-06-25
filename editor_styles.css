@@ -3,12 +3,12 @@
 }
 
 .mce-content-body .iorad-placeholder {
-    color: #6c757d;
+    color: #ececec;
     width: 100%;
     word-break: break-all;
     height: 260px;
     cursor: pointer;
-    background: url([[pix:tiny_iorad|tutorial_embedded]]) center center / auto auto no-repeat #6c757d;
+    background: url([[pix:tiny_iorad|tutorial_embedded]]) center center / auto auto no-repeat #ececec;
 }
 
 
