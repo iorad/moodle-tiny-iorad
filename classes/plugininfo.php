@@ -43,12 +43,22 @@ class plugininfo extends plugin implements plugin_with_buttons, plugin_with_menu
         return true;
     }
 
+    /**
+     * Get a list of the buttons provided by this plugin.
+     *
+     * @return string[]
+     */
     public static function get_available_buttons(): array {
         return [
             'tiny_iorad/tiny_iorad_button',
         ];
     }
 
+    /**
+     * Get a list of the menu items provided by this plugin.
+     *
+     * @return string[]
+     */
     public static function get_available_menuitems(): array {
         return [
             'tiny_iorad/tiny_iorad_button',

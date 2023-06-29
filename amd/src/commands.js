@@ -21,15 +21,15 @@
  * @license http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
+import {getButtonImage} from 'editor_tiny/utils';
+import {handleAction} from './ui';
 import {get_string as getString} from 'core/str';
 import {component, buttonName, icon} from './common';
 import {hasAnyIoradPermission} from "./options";
-import {handleAction} from "./ui";
-import {getButtonImage} from 'editor_tiny/utils';
 
 export const getSetup = async() => {
     const [buttonText, buttonImage] = await Promise.all([
-        getString('button_title', component, undefined, undefined),
+        getString('button_title', component),
         getButtonImage('icon', component),
     ]);
 
@@ -43,7 +43,6 @@ export const getSetup = async() => {
         // Register the iorad icon
         editor.ui.registry.addIcon(icon, buttonImage.html);
 
-        // TODO test it
         // Register the Menu Button as a toggle.
         // This means that when highlighted over an existing iorad element it will show as toggled on.
         editor.ui.registry.addToggleButton(buttonName, {
