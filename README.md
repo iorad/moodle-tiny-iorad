@@ -2,7 +2,11 @@
 
 [![Moodle Plugin CI](https://github.com/iorad/moodle-tiny-iorad/actions/workflows/moodle-plugin-ci.yml/badge.svg?branch=master)](https://github.com/iorad/moodle-tiny-iorad/actions/workflows/moodle-plugin-ci.yml)
 
-The iorad tinyMCE editor plugin for Moodle enables you to quickly and safely browse through your entire iorad tutorial.
+Instantly create step-by-step tutorials. No uploads. No screenshot editing. See [how it works](https://www.iorad.com/tutorialbuilder).
+
+Creating solution articles is extremely painful and time consuming. A 20 step article takes 1-2 hours to make. Take a screenshot, edit it, upload...rinse and repeat. Precious time wasted. Worst of all it’s your most valuable employee, a power user, thats tasked with doing this.
+
+What if I told you iorad could speed this process -10X. That’s right. That same solution article could be done in under 5 minutes.
 
 This makes it easy to embed iorad tutorial using the [tinyMCE editor](https://docs.moodle.org/311/en/TinyMCE_editor) and share them with your course participants.
 
