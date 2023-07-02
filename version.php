@@ -29,6 +29,6 @@ $plugin->component = 'tiny_iorad';
 $plugin->release = 'v1.0.2';
 $plugin->version = 2023070300;
 $plugin->requires = 2022112800;
-$plugin->supported = [40, 42];
+$plugin->supported = [401, 402];
 $plugin->maturity = MATURITY_STABLE;
 $plugin->dependencies = [];
