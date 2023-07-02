@@ -26,8 +26,8 @@ defined('MOODLE_INTERNAL') || die();
 
 /** @var object $plugin */
 $plugin->component = 'tiny_iorad';
-$plugin->release = 'v1.0.1';
-$plugin->version = 2023070200;
+$plugin->release = 'v1.0.2';
+$plugin->version = 2023070300;
 $plugin->requires = 2022112800;
 $plugin->supported = [40, 42];
 $plugin->maturity = MATURITY_STABLE;
