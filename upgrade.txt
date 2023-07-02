@@ -1,2 +1,2 @@
 == 1.0 ==
-First release of iorad for tinyMCE editor
+First release of iorad for Moodle tinyMCE editor

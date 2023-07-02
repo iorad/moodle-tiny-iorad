@@ -1,6 +1,6 @@
 # Moodle iorad tinyMCE editor plugin #
 
-[![Moodle Plugin CI](https://github.com/habibillah/iorad-tiny-editor/actions/workflows/moodle-ci.yml/badge.svg?branch=main)](https://github.com/habibillah/iorad-tiny-editor/actions/workflows/moodle-ci.yml)
+[![Moodle Plugin CI](https://github.com/iorad/moodle-tiny-iorad/actions/workflows/moodle-plugin-ci.yml/badge.svg?branch=master)](https://github.com/iorad/moodle-tiny-iorad/actions/workflows/moodle-plugin-ci.yml)
 
 The iorad tinyMCE editor plugin for Moodle enables you to quickly and safely browse through your entire iorad tutorial.
 
