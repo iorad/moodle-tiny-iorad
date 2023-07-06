@@ -14,7 +14,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Options helper for Tiny Media plugin.
+ * Options helper for Tiny iorad plugin.
  *
  * @module tiny_iorad/options
  * @copyright 2023 iorad <info@iorad.com>
@@ -37,7 +37,7 @@ export const register = (editor) => {
 };
 
 /**
- * Get the permissions configuration for the Tiny Media plugin.
+ * Get the permissions configuration for the Tiny iorad plugin.
  *
  * @param {TinyMCE} editor
  * @returns {object}
@@ -47,7 +47,7 @@ export const getPermissions = (editor) => {
 };
 
 /**
- * Get the permissions configuration for the Tiny Media plugin.
+ * Get the permissions configuration for the Tiny iorad plugin.
  *
  * @param {TinyMCE} editor
  * @returns {object}
