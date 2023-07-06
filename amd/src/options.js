@@ -16,7 +16,7 @@
 /**
  * Options helper for Tiny Media plugin.
  *
- * @module tiny_media/options
+ * @module tiny_iorad/options
  * @copyright 2023 iorad <info@iorad.com>
  * @license http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
